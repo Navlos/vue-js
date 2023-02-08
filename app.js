@@ -1,11 +1,22 @@
 const app = Vue.createApp({
-    data() {
-        return{
-            title: 'How to not give a fuck',
-            age:35,
-            name:'Adetayo',
-        }
-    }
-})
+    data(){
+      return{
+          showBooks:true,
+          title:'ONE THOUGHT AT A TIME',
+          author:'Adetayo',
+          age:45,
+      }
+    },
 
-app.mount('#app')
+    methods:{
+        toggleShowBooks(){
+            this.showBooks=!this.showBooks
+        }
+
+
+        }
+
+    }
+  )
+  
+  app.mount('#app')
